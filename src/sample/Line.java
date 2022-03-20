@@ -1,6 +1,6 @@
 package sample;
 
-public class Line extends OpenFigure{
+public class Line extends OpenFigure {
     Line(Point startPoint, Point endPoint){
         super(startPoint, endPoint);
     }

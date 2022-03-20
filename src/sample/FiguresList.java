@@ -8,7 +8,7 @@ public class FiguresList {
     Square square;
     Triangle triangle;
 
-    FiguresList(){
+    FiguresList() {
             getTriangle();
             getRectangle();
             getLine();
