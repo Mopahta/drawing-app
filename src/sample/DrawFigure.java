@@ -4,15 +4,16 @@ import javafx.scene.canvas.GraphicsContext;
 
 public class DrawFigure {
     public static void draw(Circle circle, GraphicsContext gc){
-        gc.strokeOval(circle.startPoint.x, circle.startPoint.y, circle.radius * 2, circle.radius * 2);
+        gc.strokeOval(circle.startPoint.x - circle.radius, circle.startPoint.y - circle.radius, circle.radius * 2, circle.radius * 2);
     }
 
     public static void draw(Ellipse ellipse, GraphicsContext gc) {
-        gc.strokeOval(ellipse.startPoint.x, ellipse.startPoint.y, ellipse.a, ellipse.b);
+        gc.strokeOval(ellipse.startPoint.x - ellipse.a / 2, ellipse.startPoint.y - ellipse.b / 2, ellipse.a, ellipse.b);
     }
 
     public static void draw(Line line, GraphicsContext gc) {
         gc.strokeLine(line.startPoint.x, line.startPoint.y, line.endPoint.x, line.endPoint.y);
+
     }
 
     public static void draw(Rectangle rectangle, GraphicsContext gc) {
